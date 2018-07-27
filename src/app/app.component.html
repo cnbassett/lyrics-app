@@ -1,21 +1,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="flex-container" style="text-align:center">
-  <div class="flex-div">
-      <h1 id="header">
-          {{ header }}
-      </h1>
+  <div id="header-div">
+      <h1 id="header">{{ header }}</h1>
+      <hr>
   </div>
-  <div class="flex-div">
-    <input #titleInput id="title-input" type="text" placeholder="Title">
-    <input #artistInput id="artist-input" type="text" placeholder="Artist">
+  <h2>Lyrics</h2>
+  <div id="lyrics-div" class="flex-div">
+    <input #titleInput id="title-input" size="30" type="text" placeholder="Title">
+    <input #artistInput id="artist-input" size="30" type="text" placeholder="Artist">
     <button (click)="getNewLyrics(titleInput.value, artistInput.value)">Get Lyrics</button>
     <h3 id="lyrics-label" class="song-info">{{artist}} - {{title}}</h3>
     <p id="lyrics">{{lyrics[0]}}</p>
   </div>
-  <div class="flex-div">
+  <h2>Soundcloud</h2>
+  <div id="soundcloud-div" class="flex-div">
     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2924492&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
   </div>
-  <div class="flex-div">
-      <iframe width="100%" height="400" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=1&rel=0&listType=user_uploads&list=DJBassett2" frameborder="0" allowfullscreen></iframe> 
+  <h2>Youtube</h2>
+  <div id="youtube-div" class="flex-div">
+      <iframe width="100%" height="400" src="http://www.youtube.com/embed?max-results=1&controls=1&showinfo=1&rel=0&listType=user_uploads&list=DJBassett2" frameborder="0" allowfullscreen></iframe> 
   </div>
 </div>

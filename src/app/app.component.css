@@ -1,21 +1,28 @@
-div {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.flex-container > div {
+.flex-div {
     width: 800px;
+    margin-left: 15px;
     margin-right: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+hr {
+    border-color: black;
+}
+
+#lyrics-div {
+    padding-top: 5px;
 }
 
 #lyrics {
