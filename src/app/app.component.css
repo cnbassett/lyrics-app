@@ -16,17 +16,41 @@
     text-align: center;
     border: 2px solid black;
 }
-
+div h3 {
+    font-weight: lighter;
+}
 hr {
     border-color: black;
 }
 
 h2 {
     font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
+#header {
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: -5px;
+}
+[placeholder] {
+    border: 1px solid black;
+    margin-right: 5px;
+    height: 1.8em;
+}
+
+[type=button] {
+    background-color: lightsalmon;
+    border: 1px solid black;
+    font-weight: bold;
+    height: 2em;
+}
+
+div > h1 {
+    font-size: 3em;
+}
+
 #lyrics-div {
     padding-top: 5px;
-    background-color: white;
 }
 
 #lyrics {
@@ -43,5 +67,14 @@ h2 {
     #lyrics {
         font-size: 1em;
         line-height: 1.4;
+    }
+    div > h1 {
+        font-size: 1.6em;
+    }
+    [type~=text] {
+        height: 1.5em;
+    }
+    div ~ h2 {
+       font-size: 1.1em; 
     }
 }
